@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Industrie</title>
+    <link rel="shortcut icon" href="./WhatsApp_Image_2023-09-21_at_18.30.44-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b781ad86c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <section class="header">
+            <a href=""><img src="./WhatsApp_Image_2023-09-21_at_18.30.44-removebg-preview.png" alt=""></a>
+                    <ul class="nuuu">
+                        <li><a href="./index.html" class="active">Accueil</a></li>
+                        <li><a href="./produit.html">Nos produits</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="#"></a><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+        <div class="roro">
+            <img src="./barre-de-menu.png" alt="" class="mobile">
+        </div>
+        <div class="responsive">
+                       <li><a href="./index.html">Accueil</a></li>
+                        <li><a href="./produit.html">Nos produits</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+        </div>
+    </section>
+    <section class="hero-page2">
+        <div class="design">
+        <h2>#Contactez nous</h2>
+        <p>Laissez un message, c'est un plaisir de vous avoir</p>
+        </div>
+    </section>
+    <section class="contact-detail" id="dde">
+        <div class="détail">
+            <span>Détail</span>
+            <h2>Visitez l'une de nos agences aujourd'hui ou contactez nous</h2>
+            <h3>Dépot de vente</h3>
+            <div>
+                <li>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <p>Tolot Braicha - Bloc 7, Lahjajma - Casablanca</p>
+                </li>
+                <li>
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>jackindustrie@gmail.com</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>0635493610</p>
+                </li>
+                <li>
+                    <i class="fa-regular fa-calendar"></i>
+                    <p>Lundi-Vendredi</p>
+                </li>
+           </div>
+        </div>
+       <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.327679026318!2d-7.647896225866539!3d33.59680144164436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2fa5e0175db%3A0x610a949c03c70d15!2sJack%20Industries!5e0!3m2!1sfr!2sma!4v1695821347322!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+    </section>
+    <section class="message">
+        <form action="contact.php" method="post">
+            <span>Laissez votre message</span>
+            <h2>Faites part de vos besoins</h2>
+            <input type="text" placeholder="Votre Nom">
+            <input type="text" placeholder="Email">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Votre Message">
+            </textarea>
+            <button class="white">Envoyer</button>
+        </form>
+    </section>
+    <section class="pied" id="dde" >
+        <h4>N°1 au Maroc</h4>
+        <h2>Importateur de tout article d'outillage, de quincallerie et materiel de travaux publics.</h2>
+        <button>Explorez maintenant</button>
+    </section>
+        <script>
+            const mobilemenu = document.querySelector('.roro')
+            const mobiles = document.querySelector('.roro .mobile')
+            const responsiveb = document.querySelector('.responsive')
+
+            mobiles.onclick = function () {
+            responsiveb.classList.toggle('open')
+            }
+        </script>
+</body>
+</html>

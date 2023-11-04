@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 40px 80px;
+    gap: 50px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    height:52px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 0;
+    font-size: 1rem;
+    color: blue;
+    flex-grow: 1;
+}
+ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    color: blue;
+    transform: scale(1);
+    transition-duration: 400ms;
+}
+ul li a:hover{
+    display: block;
+    text-decoration: none;
+    color:#fff;
+    transform: scale(1);
+    transition-duration: 400ms;
+}
+.header .roro .mobile{
+    display: none;
+    width: 20px;
+}
+#dde{
+    padding: 40px 80px;
+}
+.header .nuuu{
+    display: flex;
+   list-style: none;
+   padding: 0 50px;
+}
+.responsive a{
+    text-decoration: none;
+    position:relative;
+}
+.header a img{
+    width: 90px;
+    margin-right: 60px;
+}
+span{
+    color: blue;
+}
+.hero{
+    background-image: url(./building-2762319_1280.jpg);
+    background-size: cover;
+    height: 92vh;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font: bold;
+    animation: change 10s infinite ease-in-out;
+}
+.responsive{
+    position: absolute;
+    color: #fff;
+    right: 1px;
+    font-weight: 900;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter:blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 3s;
+}
+.responsive.open{
+    height: 150px;
+}
+.responsive li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.responsive li a:hover{
+    color: green;
+}
+.responsive li a{
+   color: #fff;
+}
+.hero h4{
+    font-size: 3rem;
+   font-weight: 900;
+    color: ivory;
+}
+.indu{
+    color: aliceblue;
+}
+.Produit h1, .Produit p{
+    text-align: center;
+}
+.Produit .objet .ecrit{
+    text-align: center;
+}
+.Produit .objet img{
+    width: 200px;
+    border-radius: 6px;
+}
+.objet, .objet4{
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 20px 40px 80px rgba(0, 0, 0, 0.66);
+}
+.Produit-p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.objet4 img{
+    width: 180px;
+    height: 200px;
+}
+.section2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin: 50px;
+    gap: 80px;
+}
+.matière2 h1,.matière2 p{
+    text-align: center;
+}
+.matière2 .matière img{
+    width: 200px;
+}
+.matière2 .matière{
+   border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 20px 40px 80px rgba(0, 0, 0, 0.66);
+    width: 215px;
+}
+.matière2 .eeee{
+    text-align: center;
+}
+.pied{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: bold;
+    padding: 40pc 80px;
+    margin-bottom: 50px;
+    background-color: rgba(10, 88, 111, 0.594);
+    color: #fff;
+}
+.pied .redu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.pied button{
+    font-size: 20px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+.pied button:hover{
+    background-color: papayawhip;
+    color: #000;
+}
+.before{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin: 50px;
+    gap: 80px;
+}
+.before-banner h1,.before-banner p{
+    text-align: center;
+}
+.before .matière img{
+    width: 200px;
+}
+.before .matière{
+   border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 20px 40px 80px rgba(0, 0, 0, 0.66);
+    width: 215px;
+}
+.before-banner .eeee{
+    text-align: center;
+}
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    background-image: url(./iron-5421730_1280.jpg);
+    min-width:500px;
+    height: 50vh;
+    font: bold;
+    font-size: 2rem;
+    color: #fff;
+}
+.banner .banner-boxa{
+    background-image: url(./woman-6521199_1280.jpg);
+}
+.banner .banner-box h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+.banner .banner-box h2{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+.banner .banner-box span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.banner .banner-box .white{
+    font-size: 14px;
+    font-weight: 600px;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+.banner .banner-box:hover button{
+    background-color: blue;
+    border: 1px solid;
+}
+.banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+.banner3 .banner-box3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    background-image: url(./lighthouse-1872998_1280.jpg);
+    min-width:30%;
+    height: 30vh;
+    margin-bottom: 20px;
+    font: bold;
+    font-size: 2rem;
+    color: #fff;
+}
+.banner3 .banner-box2{
+    background-image: url(./new1.jpg);
+}
+.banner3 .banner-box4{
+    background-image: url(./new2.jpg);
+}
+
+.banner3 .banner-box3 h2{
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+.banner3 .banner-box3 h3{
+    color: red;
+    font-weight: 800;
+    font-size: 15px;
+}
+.section-l .cola img{
+    width: 90px;
+}
+.section-l{
+    padding: 80px;
+}
+.section-l .col {
+    text-align: start;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .cola img{
+    width: 90px;
+}
+footer .logo{
+    margin-bottom: 20px;
+}
+footer h4{
+   font-size: 14px;
+   padding-bottom: 20px;
+}
+footer p{
+   margin: 0 0 8px 0;
+ }
+ footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 20px;
+ }
+ footer .follow{
+    margin: 20px;
+ }
+ footer .follow i:hover,
+ footer .col:hover{
+    color: skyblue;
+ }
+.copyright{
+    width: 100%;
+    text-align: center;
+ }
+ .hero-page2{
+    background-image: url(./architect-1073608_1280.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+ }
+ .scrole{
+    text-align: center;
+ }
+ .scrole a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 20px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+ }
+ .contact-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .contact-detail .détail{
+    width: 40%;
+ }
+ .contact-detail .détail span, .message form span{
+    padding-bottom: 20px;
+    font-size: 20px;
+ }
+ .contact-detail .détail h2, .message h2{
+    font-size: 2rem;
+    line-height: 35px;
+    padding:20px 0;
+ }
+ .contact-detail .détail h3{
+    font-size: 1.7rem;
+    padding-bottom: 15px;   
+ }
+ .contact-detail .détail li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+ }
+ .contact-detail .détail li i{
+    font-size: 14px;
+    padding-right: 22px;
+ }
+ .contact-detail .détail li p{
+    margin: 0;
+    font-size: 14px;
+ }
+ .contact-detail .map{
+    width: 55%;
+    height: 350px;
+ }
+ .contact-detail .map iframe{
+    width: 100%;
+    height: 100%;
+ }
+ .message{
+    margin-bottom: 50px;
+ }
+.message form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.message form input, textarea{
+   padding: 12px 15px;
+   outline: none;
+   margin-bottom: 20px;
+   border-color: 1px solid #fff;
+}
+.message form .white{
+    font-size: 14px;
+    font-weight: 600px;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: #088178;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+.matière2 .section2 .tata{
+    height: 200px;
+}
+.matière2 .section2 .marco{
+    height: 200px;
+}
+.before .matière .tata{
+    height: 200px;
+}
+.before .matière .marco{
+    height: 200px;
+}
+
+
+
+@keyframes change {
+    0%{
+        background-image: url(./building-2762319_1280.jpg);
+    }
+    20%{
+        background-image: url(./background1.jpg);
+    }
+    40%{
+        background-image: url(./background2.jpg);
+    }
+    60%{
+        background-image: url(./background3.jpg);
+    }
+    80%{
+        background-image: url(./background4.jpg);
+    }
+    100%{
+        background-image: url(./pexels-ono-kosuki-5974366.jpg);
+    }
+}
+@media(max-width:799px){
+    .header .nuuu{
+        display: none;
+    }
+        
+    .header .roro .mobile{
+        display: block;
+    }
+    .hero{
+        background-image: url(./building-2762319_1280.jpg);
+        background-size: cover;
+        height: 70vh;
+        width: 100%;
+        padding: 0 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        font: bold;
+       animation: none;
+       text-align: center;
+    }
+    .hero h4{
+        text-align: start;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 2rem;
+        font-weight: 1200px;
+    }
+    .hero h4 span{
+       text-align: center;
+    }
+    .Produit-p{
+        justify-content: center;
+        gap: 80px;
+        padding: 40px 40px;
+    }
+    .section2 {
+        justify-content: center;
+    }
+    .pied {
+        height: 80px;
+        width: 768px;
+        padding-bottom: 10px;
+    }
+    .banner .banner-box{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        background-image: url(./iron-5421730_1280.jpg);
+        min-width:100%;
+    }
+    .banner3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 40px;
+    }
+    
+}
+@media(max-width:499px){
+    .header{
+       padding: 10px 30px;
+    }
+    .pied {
+       display: none;
+    }
+    .banner {
+      min-width: 100%;
+      height: 40vh;
+    }
+    .banner.banner-box{
+        min-width: 100%;
+        height: 30vh;
+        margin-top: 20px;
+    }
+    .contact-detail {
+      flex-direction: column;
+    }
+    .contact-detail .détail{
+        width: 100%;
+        margin-bottom: 30px;
+     }
+     .contact-detail .map{
+        width: 100%;
+     }
+}
+ 
