@@ -94,7 +94,7 @@ span{
     top: 60px;
     height: 0;
     width: 300px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter:blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -138,7 +138,7 @@ span{
     border-radius: 10px;
     box-shadow: 20px 40px 80px rgba(0, 0, 0, 0.66);
 }
-.Produit-p{
+.section2, .Produit-p, .before{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -147,15 +147,6 @@ span{
 .objet4 img{
     width: 180px;
     height: 200px;
-}
-.section2{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 50px;
-    margin: 50px;
-    gap: 80px;
 }
 .matière2 h1,.matière2 p{
     text-align: center;
@@ -197,15 +188,6 @@ span{
 .pied button:hover{
     background-color: papayawhip;
     color: #000;
-}
-.before{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 50px;
-    margin: 50px;
-    gap: 80px;
 }
 .before-banner h1,.before-banner p{
     text-align: center;
@@ -520,13 +502,15 @@ footer p{
     .hero h4 span{
        text-align: center;
     }
-    .Produit-p{
+    .Produit-p, .before{
         justify-content: center;
         gap: 80px;
         padding: 40px 40px;
     }
     .section2 {
-        justify-content: center;
+            justify-content: center;
+            gap: 80px;
+            padding: 40px 40px;
     }
     .pied {
         height: 80px;
@@ -555,17 +539,30 @@ footer p{
     .header{
        padding: 10px 30px;
     }
+    .header a img {
+        position: absolute;
+        top: 10px;
+        width: 54px;
+        margin-right: 40px;
+    }
+    .header .roro .mobile{
+        position: absolute;
+        top: 10px;
+    }
+    .banner3 .banner-box3 {
+        display: none;
+       }
     .pied {
        display: none;
     }
     .banner {
       min-width: 100%;
-      height: 40vh;
+      height: 100vh;
     }
     .banner.banner-box{
+        display: block;
         min-width: 100%;
         height: 30vh;
-        margin-top: 20px;
     }
     .contact-detail {
       flex-direction: column;
@@ -577,5 +574,8 @@ footer p{
      .contact-detail .map{
         width: 100%;
      }
+     footer {
+        padding: 0 100px;
+    }
 }
  
